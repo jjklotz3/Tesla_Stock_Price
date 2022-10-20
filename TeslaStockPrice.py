@@ -63,7 +63,7 @@ sc = StandardScaler()
 X_train[nums] = sc.fit_transform(X_train[nums])                 #THE TARGET VALUE NEEDS TO BE LEFT OUT IF IT IS A NUMERICAL VALUE OTHERWISE IT WILL NOT WORK
 X_test[nums] = sc.transform(X_test[nums])
 
-#FIND OUT WHAT THESE MODELS DO
+
 models = {
     "Linear regression":LinearRegression(),
     "Lasso ":LassoCV(),
